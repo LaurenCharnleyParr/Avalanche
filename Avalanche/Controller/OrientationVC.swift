@@ -25,7 +25,6 @@ class OrientationVC: UIViewController {
         super.viewDidLoad()
         motionManager = CMMotionManager()
         motionManager.startAccelerometerUpdates(to: .main, withHandler: handleAccelerometerData)
-        print("accellerometer started updating")
     }
     
     func handleAccelerometerData(data: CMAccelerometerData?, error: Error?) {
